@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/poke.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .box {
+            width: 1200px;
+            height: 700px;
+            background-image:url("./imgs/qipai.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*  .pig {
+              width: 90px;
+              height: 120px;
+              background-color: #3aa9fb;
+              position: absolute;
+              left: 350px;
+              top: 0;
+              background-size: cover;
+              background-position: center;
+          }*/
+        .pig {
+            width: 90px;
+            height: 120px;
+            position: absolute;
+            left: 100px;
+            top: 560px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .actice {
+            border: 1px solid yellow;
+        }
+
+        button {
+            position: absolute;
+            left: 550px;
+            bottom: 90px;
+            width: 50px;
+            height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+        }
+        .rightBtn{
+            background-image: url("./imgs/you.png");
+            background-size: cover;
+            background-position: center;
+            bottom: 20px;
+        }
+       .box .leftBtn{
+            background-image: url("./imgs/zuo.png");
+            background-size: cover;
+            background-position: center;
+        }
+       .box .refresh{
+           left:280px;
+           top: 350px;
+           background-image: url("./imgs/chongwan.jpg");
+           background-size: cover;
+           background-position: center;
+           color: red;
+           font-size: 20px;
+       }
+        .textbox{
+            position: absolute;
+            left: 200px;
+            top: 230px;
+        }
+       .box textarea{
+            resize: none;
+            border:0;
+            background-color:transparent;
+            color: yellow;
+            font-size: 20px;
+        }
+        h1{
+            position: absolute;
+            left: 455px;
+            top: 20px;
+            color: red;
+            font-size: 50px;
+        }
+        .cat{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: 850px;
+            top: 230px;
+            border-radius: 10px;
+            background-image: url("./imgs/psb.gif");
+            background-size: cover;
+            background-position: center;
+        }
+        span{
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            list-style: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>小&nbsp;&nbsp;李&nbsp;&nbsp;赌&nbsp;&nbsp;场</h1>
+   <button class="rightBtn"></button>
+   <button class="leftBtn"></button>
+   <button class="refresh">重玩</button>
+    <div class="cat">
+
+    </div>
+    <div class="textbox">
+    <textarea name="" id="" cols="20" rows="5" >规则：点击两张牌(不能被遮挡)，相加为14可消除，若发出牌中无法进行游戏，请点击下方按钮进行切牌</textarea>
+    </div>
+    <a href="chess.html"><span >扑克玩腻了？点我换个游戏试试！</span></a>
+</div>
+
+
+</body>
+</html>

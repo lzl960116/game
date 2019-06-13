@@ -1,0 +1,224 @@
+.box {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background-image: url("../imgs/timg.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto; }
+
+.black {
+  background: black; }
+
+.white {
+  background: white; }
+
+.chess {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 999; }
+
+.shu {
+  height: 560px;
+  width: 2px;
+  background: linear-gradient(red, orange, blue, aqua);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: down 1s 1 ease-in forwards; }
+
+.heng {
+  width: 560px;
+  height: 2px;
+  background: linear-gradient(to right, red, orange, blue, aqua);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: float 1s 1 ease-in forwards; }
+
+span {
+  position: absolute;
+  list-style: none;
+  color: red;
+  top: -20px; }
+
+button {
+  position: absolute;
+  left: -50px;
+  bottom: 250px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: yellow;
+  background: radial-gradient(red, green, yellow); }
+
+.shu:nth-of-type(1) {
+  left: 20px;
+  animation-delay: 50ms; }
+
+.heng:nth-of-type(1) {
+  top: 20px;
+  animation-delay: 50ms; }
+
+.shu:nth-of-type(2) {
+  left: 60px;
+  animation-delay: 100ms; }
+
+.heng:nth-of-type(2) {
+  top: 60px;
+  animation-delay: 100ms; }
+
+.shu:nth-of-type(3) {
+  left: 100px;
+  animation-delay: 150ms; }
+
+.heng:nth-of-type(3) {
+  top: 100px;
+  animation-delay: 150ms; }
+
+.shu:nth-of-type(4) {
+  left: 140px;
+  animation-delay: 200ms; }
+
+.heng:nth-of-type(4) {
+  top: 140px;
+  animation-delay: 200ms; }
+
+.shu:nth-of-type(5) {
+  left: 180px;
+  animation-delay: 250ms; }
+
+.heng:nth-of-type(5) {
+  top: 180px;
+  animation-delay: 250ms; }
+
+.shu:nth-of-type(6) {
+  left: 220px;
+  animation-delay: 300ms; }
+
+.heng:nth-of-type(6) {
+  top: 220px;
+  animation-delay: 300ms; }
+
+.shu:nth-of-type(7) {
+  left: 260px;
+  animation-delay: 350ms; }
+
+.heng:nth-of-type(7) {
+  top: 260px;
+  animation-delay: 350ms; }
+
+.shu:nth-of-type(8) {
+  left: 300px;
+  animation-delay: 400ms; }
+
+.heng:nth-of-type(8) {
+  top: 300px;
+  animation-delay: 400ms; }
+
+.shu:nth-of-type(9) {
+  left: 340px;
+  animation-delay: 450ms; }
+
+.heng:nth-of-type(9) {
+  top: 340px;
+  animation-delay: 450ms; }
+
+.shu:nth-of-type(10) {
+  left: 380px;
+  animation-delay: 500ms; }
+
+.heng:nth-of-type(10) {
+  top: 380px;
+  animation-delay: 500ms; }
+
+.shu:nth-of-type(11) {
+  left: 420px;
+  animation-delay: 550ms; }
+
+.heng:nth-of-type(11) {
+  top: 420px;
+  animation-delay: 550ms; }
+
+.shu:nth-of-type(12) {
+  left: 460px;
+  animation-delay: 600ms; }
+
+.heng:nth-of-type(12) {
+  top: 460px;
+  animation-delay: 600ms; }
+
+.shu:nth-of-type(13) {
+  left: 500px;
+  animation-delay: 650ms; }
+
+.heng:nth-of-type(13) {
+  top: 500px;
+  animation-delay: 650ms; }
+
+.shu:nth-of-type(14) {
+  left: 540px;
+  animation-delay: 700ms; }
+
+.heng:nth-of-type(14) {
+  top: 540px;
+  animation-delay: 700ms; }
+
+.shu:nth-of-type(15) {
+  left: 580px;
+  animation-delay: 750ms; }
+
+.heng:nth-of-type(15) {
+  top: 580px;
+  animation-delay: 750ms; }
+
+@keyframes down {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -40, 0, 1);
+    z-index: 99;
+    opacity: 1; }
+  25% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 60, -80, 0, 1);
+    z-index: 100;
+    opacity: 0; }
+  50% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 80, -40, 0, 1);
+    z-index: 99;
+    opacity: 1; }
+  75% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 60, 10, 0, 1);
+    z-index: 100; }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    z-index: 99; } }
+
+@keyframes float {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, -140, 0, 1);
+    z-index: 100;
+    opacity: 0; }
+  25% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 250, -45, 0, 1);
+    z-index: 99;
+    opacity: 1; }
+  50% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 100, -25, 0, 1);
+    z-index: 100; }
+  75% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -45, 0, 1);
+    z-index: 99;
+    opacity: 1; }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    z-index: 100;
+    opacity: 1; } }

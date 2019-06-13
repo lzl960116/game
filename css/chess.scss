@@ -1,0 +1,140 @@
+$r: 20px;
+.box {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background-image: url("../imgs/timg.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.black{
+  background: black;
+}
+.white{
+  background: white;
+}
+.chess{
+  width: $r * 2;
+  height: $r * 2;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+
+.shu {
+  height: 600px - $r*2;
+  width: 2px;
+  background: linear-gradient(red,orange,blue,aqua);
+  position: absolute;
+  top: $r;
+  left: $r;
+  //transform: translate3d(0, -200%, 0);
+  animation: down 1s 1 ease-in forwards;
+}
+.heng {
+  width : 600px - $r*2;
+  height: 2px;
+  background: linear-gradient(to right,red,orange,blue,aqua);
+  position: absolute;
+  top: $r;
+  left: $r;
+  //transform: translate3d(-200%, 0, 0);
+  animation: float 1s 1 ease-in forwards;
+}
+span{
+  position: absolute;
+  list-style: none;
+  color: red;
+  top: -20px;
+}
+button {
+     position: absolute;
+     left: -50px;
+     bottom: 250px;
+     width: 50px;
+     height: 50px;
+     border: none;
+     outline: none;
+     border-radius: 50%;
+  color: yellow;
+    background: radial-gradient(red,green,yellow);
+   }
+
+@for $i from 1 to 16 {
+  .shu:nth-of-type(#{$i}) {
+    left: (2*$i - 1 ) * $r;
+    animation-delay: 50ms * $i;
+  }
+  .heng:nth-of-type(#{$i}) {
+    top: (2*$i - 1 ) * $r;
+    animation-delay: 50ms * $i;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -40, 0, 1);
+    z-index: 99;
+    opacity: 1;
+  }
+
+  25% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 60, -80, 0, 1);
+    z-index: 100;
+    opacity: 0;
+  }
+
+  50%{
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 80, -40, 0, 1);
+    z-index: 99;
+    opacity: 1;
+  }
+
+  75% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 60, 10, 0, 1);
+    z-index: 100;
+  }
+
+  100%{
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    z-index: 99;
+  }
+}
+@keyframes float {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, -140, 0, 1);
+    z-index: 100;
+    opacity: 0;
+  }
+
+  25%{
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 250, -45, 0, 1);
+    z-index: 99;
+    opacity: 1;
+  }
+
+  50% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 100, -25, 0, 1);
+    z-index: 100;
+  }
+
+  75%{
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -45, 0, 1);
+    z-index: 99;
+    opacity: 1;
+  }
+
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    z-index: 100;
+    opacity: 1;
+  }
+
+}
